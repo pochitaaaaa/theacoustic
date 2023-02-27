@@ -66,7 +66,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="{{ url('')}}">Home</a></li>
+          <li><a class="nav-link scrollto active" href="{{url('')}}">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#menu">Konser</a></li>
           <li><a class="nav-link scrollto" href="{{ url('belii')}}">Beli Tiket</a></li>
@@ -83,54 +83,26 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Welcome to <span>THEACOUSTIC</span></h1>
-          <h2>The best music show!!</h2>
 
-          <div class="btns">
-            <a href="{{ url('')}}" class="btn-menu animated fadeInUp scrollto">Beli Tiket</a>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
-        </div>
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="about-img">
-              <img src="{{ asset('assets/img/bg1.jpeg')}}" alt="">
-            </div>
+    <section class="section dashboard">
+      <div class="row"> 
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">  
+            <div class="card recent-sales overflow-auto">
+              <div class="card-body">  
+                @yield('breadcrumbs')
+             </div>
+  
+           </div>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Apa itu THEACOUSTIC?</h3>
-            <p class="fst-italic">
-              THEACOUSTIC is an annual music and arts festival organized by SMKN XX Bandung. Which features several shows such as
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Music Show.</li>
-              <li><i class="bi bi-check-circle"></i> Dance theater.</li>
-            </ul>
-            <p>
-              This show is takes place at the end of every school year. If you're looking for a show of good music, laughter, and fun, THEACOUSTIC is the perfect event for you. So, mark your calendars and don't miss this memorable event.
-            </p>
-          </div>
-        </div>
-
+        </div> 
       </div>
-    </section><!-- End About Section -->
+    </section> 
+    
+  
 
   </main><!-- End #main -->
 
@@ -194,7 +166,7 @@
       </div>
     </div>
 
-    @yield('breadcrumbs')
+    
 
     <div class="container">
       <div class="copyright">

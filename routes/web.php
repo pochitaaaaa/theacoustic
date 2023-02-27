@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::resource('beli', 'App\Http\Controllers\Beli');
+Route::resource('belii', 'App\Http\Controllers\Beli');

@@ -12,9 +12,11 @@ class Beli extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(): Response
+    public function index()
     {
-        $beli = DB::table('users');
+        $belii = DB::table('tiket')->get();
+         
+        return view ('beli.index', compact('belii'));   
     }
 
     /**
