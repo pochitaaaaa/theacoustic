@@ -8,13 +8,19 @@
     <div class="row"> 
       <!-- Left side columns -->
       <div class="col-lg-12">
-        
+      
+        @if (session('status'))   
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+           {{ session('status') }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div> 
+        @endif 
 
 
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
        <tr>
        <td><h5 class="card-title">Tiket Konser</span></h5></td>
-       <td> <div align="right"><a href="" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-print"></span>Tambah</a></div> 
+       <td> <div align="right"><a href="{{url('belii/create')}}" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-print"></span>Tambah</a></div> 
        </td> 
        </tr>
       </table>
